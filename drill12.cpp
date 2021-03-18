@@ -1,4 +1,4 @@
-//g++ first.cpp ../lib_files/Graph.cpp ../lib_files/Window.cpp ../lib_files/GUI.cpp ../lib_files/Simple_window.cpp -o first `fltk-config --ldflags --use-images`
+/* g++ drill12.cpp ../lib_files/Graph.cpp ../lib_files/Window.cpp ../lib_files/GUI.cpp ../lib_files/Simple_window.cpp -o first `fltk-config --ldflags --use-images` */
 
 
 #include "../lib_files/Simple_window.h"
@@ -116,7 +116,7 @@ try{
 	
 	Circle c {Point{60,60},20};
 	Ellipse e {Point{60,60},30,10};
-	e.set_color(Color::purple);
+	e.set_color(Color::yellow);
 	Mark m {Point{60,60},'x'};
 	
 	ostringstream szov;
