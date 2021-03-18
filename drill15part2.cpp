@@ -1,3 +1,6 @@
+/* g++ drill15part2.cpp ./lib_files/std_lib_facilities.h -o drill15part2 */
+
+
 #include "../lib_files/std_lib_facilities.h"
 #include <iostream>
 
@@ -18,7 +21,7 @@ int age;
 
 Person::Person(string first,string last, int a):first_n(first), last_n(last), age(a){
 
-if (a<0 || a>150) error("helytelen életkor, 0-150 KÖZÖTTI EGÉSZ SZÁMOT kérek");
+if (a<0 || a>150) error("Helytelen életkor, 0 és 150 közötti egész számot adjon meg");
 for (int i=0; i<full_name().size(); i++){
 	if (full_name()[i]== ':' || full_name()[i]== ';' || full_name()[i]== '"' || full_name()[i]== '\''
 	|| full_name()[i]== '[' || full_name()[i]== ']' || full_name()[i]== '*' || full_name()[i]== '^' || full_name()[i]== '%' 
@@ -26,7 +29,7 @@ for (int i=0; i<full_name().size(); i++){
 	error("Helytelen karakterhasználat! Csak ABC betűit és számokat használjon!");
 }
 for (int i=0; i<full_name().length();i++){
-if (first_name().length()<1 || last_name().length()<1 || isdigit(full_name()[i])) error ("Teljes nevet adj meg, számok használata nélkül!");
+if (first_name().length()<1 || last_name().length()<1 || isdigit(full_name()[i])) error ("Teljes nevet adjon meg, számok használata nélkül!");
 }
 }
 
