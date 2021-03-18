@@ -61,7 +61,7 @@ public:
     }
 
 private:
-    int szam{0};
+    int szam{11};
 };
 
 void f(B2 &ref) {
