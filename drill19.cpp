@@ -1,6 +1,6 @@
 #include "../lib_files/std_lib_facilities.h"
 #include <vector>
-class wrong_form_exception{
+class wrong_form_exception{ 
 };
 //1.
 template<typename T> struct S 
