@@ -9,7 +9,7 @@
 
 using namespace std;
 
-// ---------------------------------- 1.resz ----------------------------------s
+// 1.rész
 struct Item
 {
     Item(string n, int i, double v): name(n), iid(i), value(v) {}
